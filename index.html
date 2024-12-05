@@ -4,100 +4,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazilian Restaurant</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="https://flavioricardo.com.br/js/fontawesome.js" defer></script>
+    <script src="js/javascript.js" defer></script>
+    <script src="js/slider.js" defer></script>
 </head>
 
 <body>
-    <div class="container"><!--Estrutura para o site-->
-        <header>
-            <div class="logo"><!--Logo do site-->
-                <p>Brazilian's Restaurant</p>
+    <header>
+        <nav>
+            <div class="logo">
+                Brazilian's Restaurant
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#destaque">Destaque</a></li>
-                    <li><a href="#sobre">Sobre nós</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <div class="hero">
-                    <img src="assets/bandeira do Brasil.jpg" alt="">
+            <div class="menu">
+                <a href="#recursos">Products</a>
+                <a href="#sobre">About</a>
+                <a href="#provaSocial">Testimonials</a>
+                <a href="#cta">Contact us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="imagemHero">
+            </div>
+            <div class="textoHero">
+                <h1>Brazilian Restaurant</h1>
+                <p>The best Brazilian food that you can enjoy with variables
+                    types of Brazilian cultures</p>
+                <a href="" class="btnCTA">Make a reservation NOW</a>
+            </div>
+        </section>
+        <section class="features" id="highlights">
+            <h2 class="mask">Dishes offered by the restaurant</h2>
+            <div class="featureSlider">
+                <div class="featSlides">
+                    <div class="featSlide">
+                        <div class="featText">
+                            <h3>Arroz Carreteiro</h3>
+                            <p>Representing the southern region of the country, we have arroz carreteiro, typical of Rio
+                                Grande do Sul.
+                                The dish came about when the carreteiros (cargo carriers) who traveled in carts pulled
+                                by
+                                oxen
+                                pulled by oxen cooked a mixture of rice and sun-dried meat stew in an iron pot.
+                                meat stew.
+                                As it was a practical recipe, it was easily prepared by a lone traveler.
+                                The dish was incorporated into Brazilian cuisine and today it is quite common to find
+                                and
+                                in all regions of the country.
+                            </p>
+                        </div>
+                        <div class="featPic">
+                            <img src="assets/arroz-carreteiro.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="featSlide">
+                        <div class="featText">
+                            <h3>Acarajé</h3>
+                            <p>Acarajé is a delicious delicacy prepared with a handmade bean cake,
+                                seasoned with onion and salt, fried in palm oil and then filled with vatapá (coconut
+                                milk,
+                                cashew nuts, peanuts and shrimp), vinaigrette and dried shrimp.
+                                Incidentally, if someone asks you if you want your acarajé cold or hot, they are not
+                                referring to the temperature at which it is served.
+                                the temperature at which it is served, but rather the amount of chili pepper you add!
+                            </p>
+                        </div>
+                        <div class="featPic">
+                            <img src="assets/Acarajé.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="featSlide">
+                        <div class="featText">
+                            <h3>Bobó de camarão</h3>
+                            <p>Bobó is well known throughout Brazil, especially in the Northeast.
+                                prawns sautéed in coconut milk, palm oil and green spices.
+                                Its origins are Afro-Brazilian and the dish may also have had an indigenous influence.
+                            </p>
+                        </div>
+                        <div class="featPic">
+                            <img src="assets/bobo-de-camarao.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="featSlide">
+                        <div class="featText">
+                            <h3>Feijoada</h3>
+                            <p>The traditional dish consists of black beans, matured meats (carne-seca, carne de sol,
+                                etc.)
+                                and pork parts (ears, tongue, tail, loin and ribs, as well as sausages), and served
+                                with white rice, cabbage, farofa, pork rinds and oranges.
+                                served with white rice, cabbage, farofa, pork rinds and oranges.
+                                Our feijoada is a complete meal and very popular among Brazilians, especially at
+                                gatherings of friends and family on weekends, holidays and commemorative dates.
+                            </p>
+                        </div>
+                        <div class="featPic">
+                            <img src="assets/Feijoada.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="featSlide">
+                        <div class="featText">
+                            <h3>Virado á Paulista</h3>
+                            <p>During the expeditions of the 17th century, in colonial Brazil, foods such as corn flour,
+                                beans, bacon and dried meat were packed together and rattled along the way,
+                                getting turned over. Thus, virado à paulista was born
+                                Over the years, the recipe gained new ingredients, such as pork, fried egg,
+                                rice, sausage, cabbage, pork rinds and plantains.
+                            </p>
+                        </div>
+                        <div class="featPic">
+                            <img src="assets/Virado a paulista.webp" alt="">
+                        </div>
+                    </div>
                 </div>
-
-            </section>
-            <section id="destaque">
-                <h1>Destaque</h1>
-                <div class="Destaque">
-                    <img src="assets/arroz carreteiro.jpg" alt="">
+                <div class="featControl Prev">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
                 </div>
-                <div class="about">
-                    <p>It came about when the carreteiros (cargo carriers)
-                        who crossed Rio Grande do Sul in carts pulled by oxen,
-                        cooked a mixture of chopped jerky (stew) and rice in an
-                        iron pot. It was a practical dish that, due to its
-                        simplicity, could be prepared by the lone traveler, who
-                        could only eat a barbecue (made from fresh meat) in a
-                        paradouro after many days on the road.
+                <div class="featControl Next">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+                <div class="featIndicators">
+                    <span class="featIndicator" data-slide-to="0"></span>
+                    <span class="featIndicator" data-slide-to="1"></span>
+                    <span class="featIndicator" data-slide-to="2"></span>
+                    <span class="featIndicator" data-slide-to="4"></span>
+                </div>
+            </div>
+            <a href="#" class="btnCTA">Make a reservation NOW and receive Benefits</a>
+        </section>
+        <section id="sobre">
+            <h2>About us</h2>
+            <div class="fundador">
+                <img src="assets/dev-m-2.webp" alt="">
+            </div>
+            <ul>
+                <li>
+                    <p>Founded in 1978, Brazilian's Restaurant has become one of the largest restaurant in Brazil,
+                        with every restaurant in the franchise.
                     </p>
-                    <a href="">buy here</a>
-                </div>
-            </section>
-            <section id="produtos">
-                <div class="Produtos">
-                    <h1>Produtos</h1>
-                    <p>Outros produtos de nosso site</p>
-                </div>
+                </li>
+                <li>
+                    <p>Jair Neves dos Santos saw a great business in 1974 when he was 27 years old.
+                        especially with the growth of tourism in Brazil, he spent his four years trying to
+                        build the place and start a career in gastronomy until the restaurant was opened and success
+                        soon followed.
+                    </p>
+                </li>
+                <li>
+                    <p>Today we are all over Brazil delivering the best of Brazilian gastronomy to continue the legacy
+                        of our founder and CEO of this restaurant.
+                    </p>
+                </li>
+            </ul>
+            <a href="#" class="btnCTA">Make a reservation NOW</a>
+        </section>
+        <section id="provaSocial">
+            <h2>Testimonials from our clients</h2>
+            <ul>
+                <li>
+                    <div class="foto">
+                        <img src="assets/test-1.webp" alt="">
+                    </div>
+                    <div class="depo">
+                        <h5>lourane</h5>
+                        <div class="stars">
+                            <img src="assets/aval-50.png" alt="">
+                        </div>
+                        <p><q>I loved the place, the food, everything you can imagine
+                                The place is very cozy, very tasty food and great service,
+                                definitely a 10/10.
+                            </q></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="foto">
+                        <img src="assets/test-3.webp" alt="">
+                    </div>
+                    <div class="depo">
+                        <h5>Michael</h5>
+                        <div class="stars">
+                            <img src="assets/aval-50.png" alt="">
+                        </div>
+                        <p><q>The food was very good, I loved the service provided at the restaurant.
+                                the restaurant, I was very well looked after, and I loved the decoration
+                                of the place.
+                            </q></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="foto">
+                        <img src="assets/test-2.webp" alt="">
+                    </div>
+                    <div class="depo">
+                        <h5>Mary</h5>
+                        <div class="stars">
+                            <img src="assets/aval-50.png" alt="">
+                        </div>
+                        <p><q>I've been to several restaurants and nothing
+                                was as good as this restaurant, tasty food,
+                                beautiful place and good service.
+                            </q></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="foto">
+                        <img src="assets/test-4.webp" alt="">
+                    </div>
+                    <div class="depo">
+                        <h5>Joshua</h5>
+                        <div class="stars">
+                            <img src="assets/aval-50.png" alt="">
+                        </div>
+                        <p><q>Food 100/10, Venue 10/10, service 50/10, simply
+                                the best I've ever been to in my life.
+                            </q></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="foto">
+                        <img src="assets/test-5.webp" alt="">
+                    </div>
+                    <div class="depo">
+                        <h5>Elizabeth</h5>
+                        <div class="stars">
+                            <img src="assets/aval-50.png" alt="">
+                        </div>
+                        <p><q>My life has changed since I met this restaurant
+                                wonderful service, good food, chic place, I have no
+                                doubt it deserves a 100/10.
+                            </q></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="cta">
+            <div class="ctaTexto">
+                <h2>Benefits and other information!</h2>
                 <ul>
-                    <li>
-                        <div class="prod">
-                            <div class="prod-foto">
-                                <img src="assets/" alt="">
-                            </div>
+                    <li>35% OFF First Booking;</li>
+                    <li>50% OFF First Birthday Booking;</li>
+                    <li>Rodizio for R$ 34,99 (During the weeks);</li>
+                    <li>For birthday bookings, you'll get a free cake to celebrate;</li>
+                    <li>Rodizio for R$ 49,99 (On weekends).</li>
+                </ul>
+            </div>
+            <form class="cta">
+                <p>Make your first reservation NOW and enjoy:</p>
+                <input type="text" name="Nome" id="Nome">
+                <input type="tel" name="WhatsApp" id="WhatsApp">
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Make my reservation">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024. Brazilian Restaurant (by João Vitor Farias dos Santos). All rights reserved. for educational
+            purposes.</p>
+    </footer>
+    <a href="#" class="ocultar" id="btnUp">
+        <i class="fa-solid fa-circle-up"></i>
+    </a>
 
-                        </div>
-                    </li>
-                    <li>
-                        <div class="prod">
-                            <div class="prod-foto">
-                                <img src="assets/" alt="">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="prod">
-                            <div class="prod-foto">
-                                <img src="assets/" alt="">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="prod">
-                            <div class="prod-foto">
-                                <img src="assets/" alt="">
-                            </div>
-                        </div>
-                    </li>
-            </section>
-            <section id="sobre">
-                <h1>Sobre nós.</h1><!--Sobre nós-->
-                <div class="sobre">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptas alias tenetur magni quos praesentium perferendis unde
-                        nihil aperiam ab sequi pariatur totam quae laborum ex et non odio,
-                        at earum.
-                    </p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            &copy;2024. By João Santos
-
-        </footer>
-    </div>
 </body>
 
 </html>

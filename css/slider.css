@@ -1,0 +1,145 @@
+@import url(style.css);
+
+.features {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.features>h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    margin: 80px 0;
+    color: var(--yellow);
+}
+
+.featureSlider {
+    width: 100%;
+    position: relative;
+}
+
+.featSlides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featSlide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.featSlide img {
+    width: 100%;
+    display: block;
+}
+
+.featText {
+    width: 35%;
+    padding: 0 32px 0 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.featText h3 {
+    font-size: 40px;
+    color: #fafafa;
+    /*color: var(--yellow);*/
+    font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+.featText p {
+    color: #000000;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 22px;
+}
+
+.featPic {
+    width: 65%;
+    /* -webkit-mask-image: url(../assets/img-mask.webp);
+    mask-image: url(../assets/img-mask.webp);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center; */
+}
+
+.featPic img {
+    width: 100%;
+    display: block;
+}
+
+/* featControls */
+.featControl {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    transition: .3s;
+    opacity: .4;
+    filter: drop-shadow(0px 0px 4px #242424);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featControl:hover {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 4px #24242480);
+}
+
+.featControl.Prev {
+    left: 10px;
+    font-size: 48px;
+    color: var(--yellow);
+}
+
+.featControl.Next {
+    right: 10px;
+    font-size: 48px;
+    color: var(--yellow);
+}
+
+.featControl.Prev img,
+.featControl.Next img {
+    width: 100%;
+}
+
+.featIndicators {
+    position: absolute;
+    bottom: 40px;
+    left: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 900;
+}
+
+.featIndicator {
+    height: 10px;
+    width: 10px;
+    background-color: #fafafa80;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 8px #222222;
+}
+
+.featIndicator.active {
+    background-color: var(--yellow);
+}
