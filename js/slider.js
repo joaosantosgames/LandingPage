@@ -99,4 +99,4 @@ class Carousel {
 
 // Iniciar sliders
 //new Carousel(document.getElementById('slider1'), true); // Com auto-play
-new Carousel(document.getElementById('highlights'), true); // Sem auto-play
+new Carousel(document.getElementById('produtos'), true); // Sem auto-play
